@@ -1,0 +1,6 @@
+
+# secrets
+.env
+
+# jupyter notebooks
+notebooks/

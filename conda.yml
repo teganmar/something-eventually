@@ -1,0 +1,26 @@
+name: something-eventually
+channels:
+  - defaults
+  - conda-forge  # made env creation much slower, but allowed for jupyter notebook to be used from jupyter lab dependency
+dependencies:
+  - python=3.10
+  - pip
+  - pip:
+  # frameworks etc.
+      - streamlit
+      - bokeh<3
+      - matplotlib
+      - python-dotenv
+  # scraping
+      - httpx
+      - selectolax
+  # tests and code styling
+      - pytest
+      - syrupy
+      - flake8
+      - flake8-length
+      - black==23.10.1
+      - interrogate
+  # quick dev notebooks
+      - jupyterlab
+      - ipywidgets
